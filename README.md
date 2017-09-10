@@ -2,7 +2,7 @@
 Library for easy work with android fingerprint
 
 
-Class may be declared on any API level, but work only for API >= 23, except `checkFinger()`
+Class may be declared on API at least 14.
 
 The class uses a set of methods for different fingerprint states:
 
