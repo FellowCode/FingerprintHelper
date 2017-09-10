@@ -2,6 +2,9 @@
 Library for easy work with android fingerprint
 
 
+Gradle:
+`compile 'com.github.fellowcode:FingerprintHelper:0.0.5'`
+
 Class may be declared on API at least 14.
 
 The class uses a set of methods for different fingerprint states:
