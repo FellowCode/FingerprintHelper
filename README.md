@@ -2,7 +2,7 @@
 Library for easy work with android fingerprint
 
 
-Gradle:
+Gradle: 
 `compile 'com.github.fellowcode:FingerprintHelper:0.0.5'`
 
 Class may be declared on API at least 14.
@@ -35,17 +35,17 @@ Prior to declaring a class, an API check is required. The class is declared as f
 	FingerprintHelper fingerprintHelper = new FingerprintHelper(context, fingerprintMethods);
 ```
 
-Check device and API fingerprint support:
+Return true if hardware and API support fingerprint:
 ```java
 	fingerprintHelper.checkFinger();
 ```
 
-To activate the sensor:
+To activate the sensor(can be used without `checkFinger()`):
 ```java
 	fingerprintHelper.prepareSensor();
 ```
 
-To deactivate the sensor:
+To deactivate the sensor(can be used without `checkFinger()`):
 ```java
 	fingerprintHelper.stopSensor();
 ```
@@ -55,7 +55,7 @@ You can add ImageView to the state handler. `millis` - the time(milliseconds) th
 	fingerprintHelper.setImage(millis, yourImageView, 
 								<your_base_state_resource>,
 								<your_succes_state_resource>,
-								<your_fail_state_resurce>);
+								<your_fail_state_resource>);
 ```
 For example:
 ```java
