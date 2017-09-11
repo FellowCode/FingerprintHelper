@@ -51,7 +51,7 @@ To deactivate the sensor:
 	fingerprintHelper.stopSensor();
 ```
 
-You can add ImageView to the state handler. `millis` - the time(milliseconds) through which the ImageView will return to the base state:
+You can add ImageView to the state handler(must be declared before `prepareSensor()`) . `millis` - the time(milliseconds) through which the ImageView will return to the base state:
 ```java
 	fingerprintHelper.setImage(millis, yourImageView, 
 								<your_base_state_resource>,
