@@ -30,7 +30,7 @@ FingerprintMethods fingerprintMethods = new FingerprintMethods() {
 Method onAuthenticationError works after several onAuthenticationFailed consecutive.
 
 
-Prior to declaring a class, an API check is required. The class is declared as follows:
+The class is declared as follows:
 ```java
 	FingerprintHelper fingerprintHelper = new FingerprintHelper(context, fingerprintMethods);
 ```
