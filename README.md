@@ -39,13 +39,14 @@ Return true if hardware and API support fingerprint:
 ```java
 	fingerprintHelper.checkFinger();
 ```
+All class methods can be used without `checkFinger()`.
 
-To activate the sensor(can be used without `checkFinger()`):
+To activate the sensor:
 ```java
 	fingerprintHelper.prepareSensor();
 ```
 
-To deactivate the sensor(can be used without `checkFinger()`):
+To deactivate the sensor:
 ```java
 	fingerprintHelper.stopSensor();
 ```
